@@ -6,27 +6,45 @@ var score = 0;
 var questions = 
 [
     {
-      question:"Do you Invest in Stock Markets? ",
-      answer:"Yes"
+      question:"Are you an Investor or a Trader? ",
+      answer:"Investor"
     }
+  ,
+    {
+    question:"How many stock exchanges are there (in number)? ",
+    answer:"2"
+    }
+  ,
+    {
+    question:"Which is the oldest exchange in Asia? ",
+    answer:"BSE"
+    },
+    {
+    question:"How many stocks are there in Nifty Index?(in number) ",
+    answer:"50"
+    } ,
+    {
+    question:"Which is the index for the banks? ",
+    answer:"Bank Nifty"
+    }    ,
+    {
+    question:"The Indian Stock Market is regulated by ? ",
+    answer:"SEBI"
+    }     ,
+    {
+    question:"Share of profit, if distributed by management in cash is called as: ? ",
+    answer:"Dividends"
+    }  
 
-  ,
-    {
-    question:"Do you know the different sectors? ",
-    answer:"Yes"
-    }
-  ,
-    {
-    question:"Do you want me to tell you about different sectors? ",
-    answer:"Yes"
-    }   
+    
 ];
 
 //This takes user name
 function welcomeMsg() {
- var userName = readlineSync.question("What is your name? ");
+ var userName = readlineSync.question("Enter your name? ");
 
-  console.log("Welcome "+ userName + " do you know me?");
+  console.log("Welcome "+ userName)
+  console.log("Instructions-This is a simple quiz about Stock Markets.")
 }
 
 
